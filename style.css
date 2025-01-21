@@ -1,0 +1,13 @@
+#container{
+    text-align: center;
+}
+input{
+    margin-bottom: 5px
+}
+button{
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+body{
+    background-color: aquamarine;
+}
