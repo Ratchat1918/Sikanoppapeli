@@ -8,15 +8,16 @@ let nykyiset_pisteet=0;
 let panki1; let panki2; let panki3; let panki4;
 let pisteet1=0; let pisteet2=0; let pisteet3=0; let pisteet4=0;
 let game_over=false;
+let nimi1; let nimi2; let nimi3; let nimi4;
 
 function RollDice(){
-    let nimi1; let nimi2; let nimi3; let nimi4;
+
     if(game_over===false){
         const valinta=document.getElementById("valinta");
         if(valinta.value==="kaksi_pelaaja"){
-            if(nimi1===undefined || nimi2===undefined || nimi1===null || nimi2===null || nimi1 === "" || nimi2 === "" || nimi3 === "" || nimi4 === ""){
-                nimi1==prompt("Syöttö pelaajan 1 nimi:");
-                nimi2==prompt("Syöttö pelaajan 2 nimi:");
+            if(nimi1===undefined || nimi2===undefined){
+                nimi1=prompt("Syöttö pelaajan 1 nimi:");
+                nimi2=prompt("Syöttö pelaajan 2 nimi:");
             }
             document.getElementById("pelaaja1").textContent=`Pelaajan ${nimi1} pisteet: ${pisteet1}`;
             document.getElementById("pelaaja2").textContent=`Pelaajan ${nimi2} pisteet: ${pisteet2}`;
