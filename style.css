@@ -1,5 +1,6 @@
 #container{
     text-align: center;
+    position: relative;
 }
 input{
     margin-bottom: 5px
