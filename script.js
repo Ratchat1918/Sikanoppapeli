@@ -5,7 +5,6 @@ const restartBtn = document.getElementById("restart");
 let vuoro=1;
 let nykyinen_pelaaja;
 let nykyiset_pisteet=0;
-let panki1; let panki2; let panki3; let panki4;
 let pisteet1=0; let pisteet2=0; let pisteet3=0; let pisteet4=0;//"pankit" johoin tallentaan viimen vuoran pisteet
 let nimi1; let nimi2; let nimi3; let nimi4;
 
@@ -36,8 +35,7 @@ function RollDice(){
                 nykyiset_pisteet = summa + pisteet1;
                 pisteet.textContent = `Pisteet: ${nykyiset_pisteet}`;
                 if (dice_side === 1) {
-                    pisteet1=0;
-                    nykyiset_pisteet = 0;
+                    nykyiset_pisteet=pisteet1;
                     pisteet.textContent = 'Tappio, seuravan pelaajan vuoro';
                     lopeta.disabled=true;
                     stopTurn();
@@ -58,8 +56,7 @@ function RollDice(){
                 nykyiset_pisteet = summa + pisteet2;
                 pisteet.textContent = `Pisteet: ${nykyiset_pisteet}`;
                 if (dice_side === 1) {
-                    pisteet2=0;
-                    nykyiset_pisteet = 0;
+                    nykyiset_pisteet=pisteet2;
                     pisteet.textContent = 'Tappio, seuravan pelaajan vuoro';
                     lopeta.disabled=true;
                     stopTurn();
@@ -91,8 +88,7 @@ function RollDice(){
                 nykyiset_pisteet = summa + pisteet1;
                 pisteet.textContent = `Pisteet: ${nykyiset_pisteet}`;
                 if (dice_side === 1) {
-                    pisteet1=0;
-                    nykyiset_pisteet = 0;
+                    nykyiset_pisteet=pisteet1;
                     pisteet.textContent = 'Tappio, seuravan pelaajan vuoro';
                     lopeta.disabled=true;
                     stopTurn();
@@ -113,8 +109,7 @@ function RollDice(){
                     nykyiset_pisteet = summa + pisteet2;
                     pisteet.textContent = `Pisteet: ${nykyiset_pisteet}`;
                     if (dice_side === 1) {
-                        pisteet2=0;
-                        nykyiset_pisteet = 0;
+                        nykyiset_pisteet=pisteet2;
                         pisteet.textContent = 'Tappio, seuravan pelaajan vuoro';
                         lopeta.disabled=true;
                         stopTurn();
@@ -135,8 +130,7 @@ function RollDice(){
                     nykyiset_pisteet = summa + pisteet3;
                     pisteet.textContent = `Pisteet: ${nykyiset_pisteet}`;
                     if (dice_side === 1) {
-                        pisteet3=0;
-                        nykyiset_pisteet = 0;
+                        nykyiset_pisteet=pisteet3;
                         pisteet.textContent = 'Tappio, seuravan pelaajan vuoro';
                         lopeta.disabled=true;
                         stopTurn();
@@ -157,8 +151,7 @@ function RollDice(){
                     nykyiset_pisteet = summa + pisteet4;
                     pisteet.textContent = `Pisteet: ${nykyiset_pisteet}`;
                     if (dice_side === 1) {
-                        pisteet4=0;
-                        nykyiset_pisteet = 0;
+                        nykyiset_pisteet=pisteet4;
                         pisteet.textContent = 'Tappio, seuravan pelaajan vuoro';
                         lopeta.disabled=true;
                         stopTurn();
