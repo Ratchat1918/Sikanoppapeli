@@ -31,13 +31,11 @@ function RollDice(){
                 pisteet.textContent=`Pisteet: ${pisteet1}`;
                 document.getElementById("nykyinen_pelaaja").textContent = `Pelaajan ${nimi1} vuoro`;
                 if(tupla_maara1===3){
-                    pisteet1=0;
-                    nykyiset_pisteet=0;
+                    nykyiset_pisteet=pisteet1;
                     stopTurn()
                 }
                 if ((num1 === 1 && num2 !== 1) || (num2 === 1 && num1 !== 1)) {
-                    pisteet1=0;
-                    nykyiset_pisteet=0;
+                    nykyiset_pisteet=pisteet1;
                     pisteet.textContent = "Tappio, seuravan pelaajan vuoro";
                     lopeta.disabled=true;
                     stopTurn();
@@ -73,13 +71,11 @@ function RollDice(){
                 console.log(`Pisteet2: ${pisteet1}`);
                 document.getElementById("nykyinen_pelaaja").textContent = `Pelaajan ${nimi2} vuoro`;
                 if(tupla_maara2===3){
-                    pisteet2=0;
-                    nykyiset_pisteet=0;
+                    nykyiset_pisteet=pisteet2;
                     stopTurn()
                 }
                 if ((num1 === 1 && num2 !== 1) || (num2 === 1 && num1 !== 1)) {
-                    pisteet2=0;
-                    nykyiset_pisteet=0;
+                    nykyiset_pisteet=pisteet2;
                     pisteet.textContent = "Tappio, seuravan pelaajan vuoro";
                     lopeta.disabled=true;
                     stopTurn();
@@ -126,13 +122,11 @@ function RollDice(){
                     console.log(`Pisteet1: ${pisteet1}`);
                     document.getElementById("nykyinen_pelaaja").textContent = `Pelaajan ${nimi1} vuoro`;
                     if(tupla_maara1===3){
-                        pisteet1=0;
-                        nykyiset_pisteet=0;
+                        nykyiset_pisteet=pisteet1;
                         stopTurn();
                     }
                     if ((num1 === 1 && num2 !== 1) || (num2 === 1 && num1 !== 1)) {
-                        pisteet1=0;
-                        nykyiset_pisteet=0;
+                        nykyiset_pisteet=pisteet1;
                         pisteet.textContent = "Tappio, seuravan pelaajan vuoro";
                         lopeta.disabled=true;
                         stopTurn();
@@ -169,13 +163,11 @@ function RollDice(){
                     console.log(`Pisteet2: ${pisteet2}`);
                     document.getElementById("nykyinen_pelaaja").textContent = `Pelaajan ${nimi2} vuoro`;
                     if(tupla_maara2===3){
-                        nykyiset_pisteet=0;
-                        pisteet2=0;
+                        nykyiset_pisteet=pisteet2;
                         stopTurn();
                     }
                     if ((num1 === 1 && num2 !== 1) || (num2 === 1 && num1 !== 1)) {
-                        pisteet2=0;
-                        nykyiset_pisteet=0;
+                        nykyiset_pisteet=pisteet2;
                         pisteet.textContent = "Tappio, seuravan pelaajan vuoro";
                         lopeta.disabled=true;
                         stopTurn();
@@ -211,13 +203,11 @@ function RollDice(){
                         console.log(`Pisteet3: ${pisteet3}`);
                         document.getElementById("nykyinen_pelaaja").textContent = `Pelaajan ${nimi3} vuoro`;
                         if(tupla_maara3===3){
-                            pisteet3=0;
-                            nykyiset_pisteet=0;
+                            nykyiset_pisteet=pisteet3;
                             stopTurn();
                         }
                         if ((num1 === 1 && num2 !== 1) || (num2 === 1 && num1 !== 1)) {
-                            pisteet3=0;
-                            nykyiset_pisteet=0;
+                            nykyiset_pisteet=pisteet3;
                             pisteet.textContent = "Tappio, seuravan pelaajan vuoro";
                             lopeta.disabled=true;
                             stopTurn();
@@ -253,13 +243,11 @@ function RollDice(){
                             console.log(`Pisteet4: ${pisteet4}`);
                             document.getElementById("nykyinen_pelaaja").textContent = `Pelaajan ${nimi4} vuoro`;
                             if(tupla_maara4===3){
-                                pisteet4=0;
-                                nykyiset_pisteet=0;
+                                nykyiset_pisteet=pisteet4;
                                 stopTurn();
                             }
                             if ((num1 === 1 && num2 !== 1) || (num2 === 1 && num1 !== 1)) {
-                                pisteet4=0;
-                                nykyiset_pisteet=0;
+                                nykyiset_pisteet=pisteet4;
                                 pisteet.textContent = "Tappio, seuravan pelaajan vuoro";
                                 lopeta.disabled=true;
                                 stopTurn();
